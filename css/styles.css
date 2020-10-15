@@ -1,7 +1,43 @@
+body {
+    background-color:#1a1c2b ;
+}
+.header {
+margin: 2% 10%;
+color: white;
+}
 .rows {
-    margin: auto 10%;
+    margin: auto 9.5%;
 }
 .row1 {
     margin: 5% auto;
+    background-color:#202741 ;
+    color: #ffffff; 
+}
+.row2 {
+    margin: 5% auto;
+    background-color:#202741;
+    color: #ffffff; 
+}
+.top {
+    position: relative;  /*Parent MUST be relative*/
+    z-index: 9;
+    background: #1a1c2b;
    
+    
+    /*Set width/height of the div in 'parent'*/
+    width: auto;
+    height: auto;
+  }
+  .top:before {
+    content: "";
+    position: absolute; /*set 'child' to be absolute*/
+    z-index: -1;  /*Make this lower so text appears in front*/
+    
+    /*You can choose to align it left, right, top or bottom here*/
+    top: 210px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#171924;
+    
 }
